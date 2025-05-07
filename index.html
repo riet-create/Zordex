@@ -3,186 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zordex | Портфолио Дизайнера</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Zordex // Designer</title>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #2c1e56;
+            color: white;
             margin: 0;
             padding: 0;
-            background-color: #2b0f3a;
-            color: #fff;
-            overflow-x: hidden;
-        }
-        header {
-            background-color: #4a1b71;
-            padding: 20px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2em;
-            transition: 0.3s;
-        }
-        nav a:hover {
-            text-decoration: underline;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
-            padding: 40px 20px;
+            text-align: center;
+            max-width: 500px;
+            margin: 0 20px;
         }
-        .about, .portfolio, .reviews {
-            margin-bottom: 50px;
+        h1 {
+            font-size: 3em;
+            color: #b299ff;
         }
-        .about h2, .portfolio h2, .reviews h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
+        .buttons {
+            margin-top: 30px;
         }
-        .about p {
-            font-size: 1.2em;
-            line-height: 1.5;
-        }
-        .portfolio .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .portfolio .gallery img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .portfolio .gallery img:hover {
-            transform: scale(1.1);
-        }
-        .reviews blockquote {
-            font-size: 1.2em;
-            margin: 20px 0;
-            padding: 10px 20px;
-            background-color: #4a1b71;
-            border-left: 5px solid #fff;
-            font-style: italic;
-        }
-        .contact button {
-            background-color: #4a1b71;
-            color: #fff;
+        .button {
+            background-color: #6a4c93;
+            color: white;
+            padding: 15px 30px;
+            margin: 10px;
             border: none;
-            padding: 10px 20px;
+            border-radius: 5px;
             font-size: 1.2em;
             cursor: pointer;
             transition: background-color 0.3s;
         }
-        .contact button:hover {
-            background-color: #370a5c;
+        .button:hover {
+            background-color: #b299ff;
         }
-        .social-links a {
-            color: #fff;
-            margin: 0 10px;
-            font-size: 1.5em;
-            transition: color 0.3s;
-        }
-        .social-links a:hover {
-            color: #8c42c4;
-        }
-
-        /* Анимации */
-        .fade-in {
-            animation: fadeIn 2s ease-out;
-        }
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-
-        /* Адаптивность */
-        @media (max-width: 768px) {
-            .gallery {
-                flex-direction: column;
-                align-items: center;
-            }
-            header h1 {
-                font-size: 2em;
-            }
-            nav a {
-                font-size: 1em;
-                margin: 0 10px;
-            }
+        .button:active {
+            background-color: #7b5b99;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Zordex</h1>
-    <nav>
-        <a href="#about">Обо мне</a>
-        <a href="#portfolio">Портфолио</a>
-        <a href="#reviews">Отзывы</a>
-        <a href="#contact">Контакты</a>
-    </nav>
-</header>
-
-<div class="container">
-    <!-- О себе -->
-    <section id="about" class="about fade-in">
-        <h2>Обо мне</h2>
-        <p>Привет! Меня зовут Zordex, я дизайнер с 2-летним опытом. Я создаю аватары, анимации и графику для различных проектов. Мой стиль сочетает креативность и функциональность, и я всегда стараюсь превзойти ожидания клиентов.</p>
-    </section>
-
-    <!-- Портфолио -->
-    <section id="portfolio" class="portfolio fade-in">
-        <h2>Портфолио</h2>
-        <div class="gallery">
-            <img src="avatar1.jpg" alt="Аватар 1">
-            <img src="avatar2.jpg" alt="Аватар 2">
-            <img src="avatar3.jpg" alt="Аватар 3">
-            <img src="avatar4.jpg" alt="Аватар 4">
+    <div class="container">
+        <h1>Zordex // Designer</h1>
+        <p>Фиолетовая тематика | Профессиональные дизайнерские решения</p>
+        
+        <div class="buttons">
+            <a href="https://t.me/pzordex" target="_blank"><button class="button">Портфолио</button></a>
+            <a href="https://t.me/zordex2" target="_blank"><button class="button">Отзывы</button></a>
         </div>
-    </section>
-
-    <!-- Отзывы -->
-    <section id="reviews" class="reviews fade-in">
-        <h2>Отзывы</h2>
-        <blockquote>
-            "Zordex — невероятно талантливый дизайнер! Работа с ним — одно удовольствие. Его работы всегда уникальны и качественны."
-            <br><strong>- Клиент 1</strong>
-        </blockquote>
-        <blockquote>
-            "Очень доволен результатом! Профессионал своего дела, работа выполнена быстро и качественно."
-            <br><strong>- Клиент 2</strong>
-        </blockquote>
-    </section>
-
-    <!-- Контакты -->
-    <section id="contact" class="contact fade-in">
-        <h2>Связаться</h2>
-        <button onclick="window.location.href='mailto:contact@zordex.com'">Написать мне</button>
-    </section>
-
-    <!-- Социальные ссылки -->
-    <section class="social-links fade-in">
-        <h2>Социальные сети</h2>
-        <a href="https://twitter.com/pzordex" target="_blank">Twitter</a>
-        <a href="https://instagram.com/zordexotz" target="_blank">Instagram</a>
-        <a href="https://dribbble.com/zordex" target="_blank">Dribbble</a>
-    </section>
-</div>
-
+    </div>
 </body>
 </html>
+
